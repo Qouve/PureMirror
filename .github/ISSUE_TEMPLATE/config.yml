@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private support, privacy and content reports
+    url: "https://github.com/Qouve/PureMirror/blob/main/SECURITY.md#private-support"
+    about: Email security@puremirror.dev for account, privacy or content reports. Follow this link for details. Do not post personal information in public issues.

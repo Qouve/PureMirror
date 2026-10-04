@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a reproducible problem with the website or overlay.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Use the private contact link for vulnerabilities, account details, privacy requests and content reports. Remove personal information and credentials from screenshots and logs."
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before reporting
+      options:
+        - label: I searched existing issues and checked that this report contains no confidential information.
+          required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Website
+        - Overlay
+        - Official plugin
+        - Unsure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version and environment
+      description: Include the relevant app/plugin version, browser and operating system. Do not include account names or device identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include an error message only after removing private information.
+    validations:
+      required: true

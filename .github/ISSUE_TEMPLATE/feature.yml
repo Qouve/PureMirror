@@ -1,0 +1,21 @@
+name: Feature suggestion
+description: Suggest an improvement to PureMirror.
+title: "[Suggestion] "
+body:
+  - type: markdown
+    attributes:
+      value: Search existing suggestions first. This is a public discussion; do not include private information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the use case and the current difficulty.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Proposed improvement
+      description: Explain the desired behavior and any alternatives you considered.
+    validations:
+      required: true
